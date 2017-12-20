@@ -32,8 +32,8 @@ vim-tips needs `curl` and `td`. If you on an Unix system, you should be fine. Yo
 
 Plugin Manager  | Add to your `/.vimrc`
 --------------- | --------------------------------------------------
-NeoBundle       | `NeoBundle 'arithran/vim-pizza'`
-Plug            | `Plug 'arithran/vim-pizza'`
-Vundle          | `Plugin 'arithran/vim-pizza'`
+NeoBundle       | `NeoBundle 'jonatasbaldin/vim-tips'`
+Plug            | `Plug 'jonatasbaldin/vim-tips'`
+Vundle          | `Plugin 'jonatasbaldin/vim-tips'`
 
 *If you want to add Windows support, please contribute!*
