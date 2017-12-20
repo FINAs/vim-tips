@@ -18,7 +18,7 @@ endfunction
 function! Tip()
   try
       echo "Getting you a tip..."
-      let data = system('curl -s https://vim-tips.deployeveryday.com | tr -d "\n"')
+      let data = system('curl -s https://vim-tips.deployeveryday.com/random_tip | tr -d "\n"')
       let content = JSONParse(data)
       let author = content.author
       let tip = content.tip
