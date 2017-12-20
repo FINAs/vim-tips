@@ -1,0 +1,12 @@
+{
+  "dev": {
+    "api_handler_name": "vim-tips-dev",
+    "api_handler_arn": "arn:aws:lambda:us-east-1:272997920446:function:vim-tips-dev",
+    "lambda_functions": {},
+    "backend": "api",
+    "chalice_version": "1.1.0",
+    "rest_api_id": "d66bsvl2gi",
+    "api_gateway_stage": "api",
+    "region": "us-east-1"
+  }
+}

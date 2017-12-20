@@ -1,0 +1,18 @@
+machine:
+  python:
+    version: 3.6.2
+
+dependencies:
+    pre:
+      - pip install setuptools --upgrade
+      - pip install chalice
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - mkdir ~/.aws 
+      - echo -e "[default]\naws_access_key_id=$AWS_ACCESS_KEY_ID\naws_secret_access_key=$AWS_SECRET_ACCESS_KEY\nregion=$AWS_REGION\n" > ~/.aws/credentials
+      - mkdir chalicelib
+      - cp tips.md chalicelib/
+      - chalice deploy
