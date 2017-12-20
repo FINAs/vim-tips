@@ -31,3 +31,11 @@ gf
 
 Open file name under the cursor.
 ```
+
+```jonatasbaldin
+ci(
+or
+ci)
+
+Delete everything inside the parentheses and enter insert mode.
+```
