@@ -1,6 +1,8 @@
 ## vim-tips
 Get nice Vim tips from the community :)
 
+[![asciicast](https://asciinema.org/a/NOsf2l2Wis07Pot5OMy5If3El.png)](https://asciinema.org/a/NOsf2l2Wis07Pot5OMy5If3El)
+
 ## Usage
 ```
 :Tip
