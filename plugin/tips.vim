@@ -4,7 +4,7 @@ endif
 
 " Function gladly copied from
 " https://github.com/vimlab/vim-json/blob/master/autoload/JSON.vim
-function JSONParse(string)
+function TipJSONParser(string)
   let [null, false, true] = ['', 0, 1]
   let stripped = substitute(a:string,'\C"\(\\.\|[^"\\]\)*"','','g')
   if stripped !~# "[^,:{}\\[\\]0-9.\\-+Eaeflnr-u \n\r\t]"
@@ -19,7 +19,7 @@ function! Tip()
   try
       echo "Getting you a tip..."
       silent let data = system('curl -s https://vim-tips.deployeveryday.com/random_tip | tr -d "\n"')
-      silent let content = JSONParse(data)
+      silent let content = TipJSONParser(data)
       silent let author = content.author
       silent let tip = content.tip
       echo "### vim-tips ###\n" . tip . "\n" . "Author: " . author
