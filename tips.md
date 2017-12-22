@@ -236,7 +236,7 @@ ga will display the ASCII, hex, and octal value of the character under the curso
 :%s/<!--\_.\{-}-->// will delete HTML comments, potentially spanning multiple lines.
 ```
 
-`` vimtipsfortune
+```vimtipsfortune
 jumps to the last modified line. `. jumps to the exact position of last modification
 ```
 
@@ -2476,7 +2476,7 @@ gv -- Re-select the previous visual area (ULTRA)
 :'a,'b!perl -pne 'BEGIN{$a=223} substr($_,2,0)=$a++' -- numbering lines (need Perl on PC) starting from arbitrary number -- Produce a list of numbers -- Type in number on line say 223 in an empty file
 ```
 
-``mvimtipsfortune
+```vimtipsfortune
 nYP`n^Aq -- in recording q repeat with @q
 ```
 
@@ -2557,10 +2557,6 @@ map ,p :call SaveWord()
 ```
 
 ```vimtipsfortune
-endfunction
-```
-
-```vimtipsfortune
 :g/^/ call Del()
 ```
 
@@ -2636,7 +2632,7 @@ main_<C-X><C-F> -- include NAME of file in text (insert mode)
 :%s/\<\(on\|off\)\>/\=strpart("offon", 3 * ("off" == submatch(0)), 3)/g
 ```
 
-``nvimtipsfortune
+```vimtipsfortune
 oremap <C-X> <Esc>`.``gvP``P -- swap two words
 ```
 
